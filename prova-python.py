@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, 'libs')
+sys.path.insert(0, 'lib')
 
 from bs4 import BeautifulSoup
 url = 'https://www.frenf.it/earlyadopters/rss/AsiaOverland2002'
