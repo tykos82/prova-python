@@ -12,6 +12,7 @@ soup = BeautifulSoup(html, 'lxml')
 giornata = soup.findAll('item')
 
 for ognigiornata in giornata:
-	titolo = item.title.text.strip()
+	titolo = ognigiornata('title')
 	print titolo
-	link = item.link.text.strip()
+	link = ognigiornata('link')
+	print link
