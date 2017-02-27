@@ -7,7 +7,7 @@ url = 'https://www.frenf.it/earlyadopters/rss/AsiaOverland2002'
 res = urllib.urlopen(url)
 html = res.read()
 
-soup = BeautifulSoup(html, 'lxml')
+soup = BeautifulSoup(html, 'xml')
 
 giornata = soup.findAll('item')
 
