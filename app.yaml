@@ -4,7 +4,7 @@ threadsafe: true
 
 libraries:
 - name: beautifulsoup4
-  version: "4-4.5.3"
+  version: latest
 
 handlers:
 - url: /.*
