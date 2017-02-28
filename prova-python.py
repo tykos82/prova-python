@@ -18,9 +18,9 @@ giornata = soup.findAll('item')
 
 for ognigiornata in giornata:
   if ognigiornata.creator.string == 'orizzontintorno':
-   # titolo = ognigiornata.string('title')
-    print ognigiornata.title.string
-    link = ognigiornata('link')
+    titolo = ognigiornata.title.string
+    print titolo
+    link = ognigiornata.link.string
     print link
-    timestamp = ognigiornata('date')
+    timestamp = ognigiornata.date.string
     print timestamp
